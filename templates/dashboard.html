@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Welcome Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dash.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome, Admin!</h1>
+    <p>Manage your dashboard efficiently</p>
+  </header>
+
+  <main>
+    <section class="overview">
+      <h2>Overview</h2>
+      <div class="card">
+        <h3>Total Users</h3>
+        <p>1200</p>
+      </div>
+      <div class="card">
+        <h3>Active Users</h3>
+        <p>850</p>
+      </div>
+      <div class="card">
+        <h3>Inactive Users</h3>
+        <p>350</p>
+      </div>
+    </section>
+
+    <section class="recent-activity">
+      <h2>Recent Activity</h2>
+      <ul>
+        <li>User registration on 15th Dec</li>
+        <li>Data update on 14th Dec</li>
+        <li>New feature implementation on 12th Dec</li>
+        <!-- Add more recent activities here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Admin Dashboard</p>
+  </footer>
+</body>
+
+</html>

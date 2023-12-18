@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}">
+</head>
+<body>
+    <div class="head">
+        <h1>Wrong Credentials &nbsp; &nbsp;</h1>
+    </div>
+    <form action="/error">
+        <header>
+            <h2>Login</h2>
+        </header>
+        <div class="wrapper">
+            <i class="material-icons">alternate_email</i>
+            <input type="text" placeholder="User" name="usr">
+        </div>
+        <div class="wrapper">
+            <i class="material-icons">lock</i>
+            <input type="text" placeholder="Password" name="pass">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
